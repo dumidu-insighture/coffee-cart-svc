@@ -1,0 +1,10 @@
+{
+    "port": 5002,
+    "mongodb": {
+        "uri": "mongodb+srv://iwiick:admin@iwiick.hxrlbxl.mongodb.net/?retryWrites=true&w=majority&appName=iwiick"
+    },
+    "redis": {
+        "host": "master.skyucp-redis.t0smab.use1.cache.amazonaws.com:6379",
+        "port": "6379"
+    }
+}
