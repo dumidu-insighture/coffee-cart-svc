@@ -2,7 +2,7 @@ name: >-
   coffee-cart-svc-gh_container-dev_app_b2f0828_env_6139ce9 Pipeline (Skyu
   Generated)
 'on':
-  schedule:
+  push:
     branches:
       - main
     paths-ignore:
