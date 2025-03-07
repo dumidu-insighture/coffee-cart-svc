@@ -2,15 +2,10 @@ name: >-
   coffee-cart-svc-gh_container-staging_app_b2f0828_env_3c44ff7 Pipeline (Skyu
   Generated)
 'on':
-  push:
+  pull_request:
     branches:
       - staging
       - release/*
-    paths-ignore:
-      - .github/workflows/**
-      - .trivyignore
-      - Readme.md
-      - README.md
   workflow_dispatch: {}
   repository_dispatch:
     types: pipeline_af496d3d-5f81-41db-8f23-5ce48a6f0966
@@ -731,6 +726,7 @@ jobs:
             
     needs:
       - build-and-push
+      - _status_testing
     permissions: write-all
     if: >-
       needs.build-and-push.outputs.stepsCanProceed == 'true' &&
